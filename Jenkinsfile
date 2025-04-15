@@ -11,7 +11,7 @@ pipeline {
 		}
 		stage('Build') {
 			steps {
-				sh 'mvn clean package' //run maven build
+				sh 'mvn clean install' //run maven build
 			}
 		}
 		stage('Test') {
